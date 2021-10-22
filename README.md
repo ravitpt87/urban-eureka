@@ -23,6 +23,7 @@ pyenv local 3.9.4
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
+pip install yellowbrick
 pip install -r requirements.txt
 ```
 
