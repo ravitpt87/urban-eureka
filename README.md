@@ -38,8 +38,6 @@ Contains our baseline model, output from error analysis and feature importance.
 
 ## Notebooks
 
-### EDA
-Notebook experimenting with EDA steps.
 
 ### Final Notebook
 Our final notebook, containing the most useful steps in EDA, data transformation, baseline model and resulting in our final model.
