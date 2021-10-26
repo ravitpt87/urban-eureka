@@ -1,12 +1,60 @@
-# ds-modeling-pipeline
-Skeleton project for building a simple model in python script
-This is the simplest way to do it. We train a simple model in the jupyter notebook, where we select only some features and do minimal cleaning. The output is then stored in simple python scripts.
+# Women-headed households in South Africa
 
-Data used is the  [coffee quality dataset](https://github.com/jldbc/coffee-quality-database).
+Female household headship has been on the rise in South Africa in recent years. Compared to male-headed households, female-headed households tend to face greater social and economic challenges. Female-headed households, in general, are more vulnerable to lower household incomes and higher rates of poverty.
+
+Here, we work with South African census data on female headship and income levels of every household across the country from 2011.
+
+The objective of this challenge is to build a predictive model that accurately estimates the % of households per ward that are female-headed and living below a particular income threshold by using data points that can be collected through other means without an intensive household survey like the census.
+
+This solution can potentially reduce the cost and improve the accuracy of monitoring key population indicators such as female household headship and income level in between census years. The winning solutions will be made publicly available at the end of the competition.
+
+Data used are downloaded from the [Zindi challenge](https://zindi.africa/competitions/womxn-in-big-data-south-africa-female-headed-households-in-south-africa)
+
+We train a simple model in the jupyter notebooks, where we select only some features and do minimal cleaning.
+
+
+## Models Groupwork
+
+### Template Model Notebook
+A template with data import and the same train-test-split for easier comparison between different models.
+
+### Baseline Model
+Notebook containing our baseline model, predicting based on 1 feature.
+
+### Linear Regression Model
+Notebook containing models using Linear Regression and Polynomial Regression.
+
+### Ridge and Lasso Regularization Model
+Notebook containing models using Ridge and Lasso.
+
+### KNN Model
+Notebook containing our KNN modelling approach.
+
+### Final Model
+Notebook containing our final model.
+
+## Plots
+Contains our baseline model, output from error analysis and feature importance.
+
+## Notebooks
+
+### EDA
+Notebook experimenting with EDA steps.
+
+### Final Notebook
+Our final notebook, containing the most useful steps in EDA, data transformation, baseline model and resulting in our final model.
+
+### Firstdraft
+Notebooks for experimenting with dataset, mostly EDA and feature investigations.
+
+### Starter Notebook
+[Starter Notebook](https://colab.research.google.com/drive/19dHG6RIQapPZTnPYGtsBWRbqW0-t07oJ), provided by Zindi.
+
+
 
 ##
 Requirements:
-- pyenv with Python: 3.8.5
+- pyenv with Python: 3.9.4
 
 ### Environment
 
@@ -23,8 +71,10 @@ pyenv local 3.9.4
 python -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
-pip install yellowbrick
 pip install -r requirements.txt
+pip install eli5
+pip install yellowbrick
+
 ```
 
 ## Usage
